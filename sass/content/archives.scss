@@ -1,0 +1,17 @@
+/* Search & Archive Header */
+.archive-header.entry-header {
+	padding-bottom: 1rem;
+	margin-bottom: 2rem;
+
+	&::before {
+		width: 3rem;
+	}
+
+	.entry-title {
+		@include font-size(22);
+	}
+}
+
+.search-header .search-form {
+	margin-top: 1rem;
+}

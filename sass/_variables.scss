@@ -1,0 +1,85 @@
+// Theme Slug.
+$themeSlug: --gt-next;
+
+// Theme Width.
+$themeWidth: 100%;
+
+// Content Width.
+$contentWidth: 800px;
+$wideBlockWidth: 1200px;
+
+// Fullwidth Template.
+$contentFullwidth: 1200px;
+$wideBlockFullwidth: 1440px;
+
+// Theme Colors
+$themeColors: (
+	--primary-color              : #e34333,
+	--secondary-color            : #c92919,
+	--accent-color               : #33a2e3,
+	--highlight-color            : #7aca56,
+	--light-gray-color           : #f0f0f0,
+	--gray-color                 : #808080,
+	--dark-gray-color            : #303030,
+	--body-background-color      : #ffffff,
+	--text-color                 : #303030,
+	--light-text-color           : rgba(0, 0, 0, 0.5),
+	--light-background-color     : rgba(0, 0, 0, 0.05),
+	--medium-background-color    : rgba(0, 0, 0, 0.15),
+	--light-border-color         : rgba(0, 0, 0, 0.1),
+	--medium-border-color        : rgba(0, 0, 0, 0.3),
+	--link-color                 : #e34333,
+	--link-hover-color           : #c92919,
+	--button-color               : #e34333,
+	--button-text-color          : #fff,
+	--button-hover-color         : #c92919,
+	--button-text-hover-color    : #fff,
+	--header-bar-color           : #fff,
+	--header-bar-text-color      : #303030,
+	--header-bar-icon-color      : #e34333,
+	--header-bar-hover-color     : rgba(0, 0, 0, 0.5),
+	--header-color               : #c92919,
+	--header-text-color          : #fff,
+	--header-hover-color         : rgba(255, 255, 255, 0.5),
+	--title-color                : #303030,
+	--title-hover-color          : #e34333,
+	--title-border-color         : #e34333,
+	--post-meta-color            : rgba(0, 0, 0, 0.5),
+	--widget-title-color         : #303030,
+	--widget-title-hover-color   : #e34333,
+	--widget-title-border-color  : #e34333,
+	--widget-border-color        : rgba(0, 0, 0, 0.1),
+	--comments-border-color      : rgba(0, 0, 0, 0.1),
+	--footer-background-color    : #202020,
+	--footer-text-color          : rgba(255, 255, 255, 0.5),
+	--footer-link-color          : rgba(255, 255, 255, 0.95),
+	--footer-link-hover-color    : rgba(255, 255, 255, 0.5),
+	--footer-border-color        : rgba(255, 255, 255, 0.1),
+);
+
+// Theme Fonts
+$baseFont: "Roboto", arial, helvetica, sans-serif;
+$titleFont: "Roboto", arial, helvetica, sans-serif;
+$themeFonts: (
+	--text-font  : $baseFont,
+	--title-font : $titleFont,
+	--navi-font  : $titleFont,
+);
+
+// Font Weight.
+$fontWeight: (
+	--title-font-weight : bold,
+	--navi-font-weight  : bold,
+);
+
+// Text Transform.
+$textTransform: (
+	--title-text-transform : none,
+	--navi-text-transform  : none,
+);
+
+// Line Height.
+$lineHeight: (
+	--text-line-height : 1.75,
+	--title-line-height : 1.25,
+);
