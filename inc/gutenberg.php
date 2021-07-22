@@ -19,55 +19,6 @@ function gt_next_gutenberg_support() {
 	// Add theme support for wide and full images.
 	add_theme_support( 'align-wide' );
 
-	// Add theme support for block color palette.
-	add_theme_support( 'editor-color-palette', apply_filters( 'gt_next_editor_color_palette_args', array(
-		array(
-			'name'  => esc_html_x( 'Primary', 'block color', 'gt-next' ),
-			'slug'  => 'primary',
-			'color' => esc_html( $theme_options['primary_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Secondary', 'block color', 'gt-next' ),
-			'slug'  => 'secondary',
-			'color' => esc_html( $theme_options['secondary_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Accent', 'block color', 'gt-next' ),
-			'slug'  => 'accent',
-			'color' => esc_html( $theme_options['accent_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Highlight', 'block color', 'gt-next' ),
-			'slug'  => 'highlight',
-			'color' => esc_html( $theme_options['highlight_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'White', 'block color', 'gt-next' ),
-			'slug'  => 'white',
-			'color' => '#ffffff',
-		),
-		array(
-			'name'  => esc_html_x( 'Light Gray', 'block color', 'gt-next' ),
-			'slug'  => 'light-gray',
-			'color' => esc_html( $theme_options['light_gray_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Gray', 'block color', 'gt-next' ),
-			'slug'  => 'gray',
-			'color' => esc_html( $theme_options['gray_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Dark Gray', 'block color', 'gt-next' ),
-			'slug'  => 'dark-gray',
-			'color' => esc_html( $theme_options['dark_gray_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Black', 'block color', 'gt-next' ),
-			'slug'  => 'black',
-			'color' => '#000000',
-		),
-	) ) );
-
 	// Add theme support for font sizes.
 	add_theme_support( 'editor-font-sizes', apply_filters( 'gt_next_editor_font_sizes_args', array(
 		array(

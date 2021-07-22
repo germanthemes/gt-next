@@ -1,53 +1,77 @@
 {
     "version": 1,
     "settings": {
-        "border": {
-            "customColor": false,
-            "customRadius": false,
-            "customStyle": false,
-            "customWidth": false
-        },
         "color": {
             "custom": true,
             "customDuotone": true,
             "customGradient": true,
             "duotone": [],
             "gradients": [],
-            "link": false,
-            "palette": []
+            "link": true,
+			"palette": [
+                {
+                    "name": "Primary",
+                    "slug": "primary",
+                    "color": "#e34333"
+                },
+				{
+                    "name": "Secondary",
+                    "slug": "secondary",
+                    "color": "#c92919"
+                },
+				{
+                    "name": "Accent",
+                    "slug": "accent",
+                    "color": "#33a2e3"
+                },
+				{
+                    "name": "Highlight",
+                    "slug": "highlight",
+                    "color": "#7aca56"
+                },
+                {
+                    "name": "White",
+                    "slug": "white",
+                    "color": "#ffffff"
+                },
+				{
+                    "name": "Light Gray",
+                    "slug": "light-gray",
+                    "color": "#f0f0f0"
+                },
+				{
+                    "name": "Gray",
+                    "slug": "gray",
+                    "color": "#808080"
+                },
+				{
+                    "name": "Dark Gray",
+                    "slug": "dark-gray",
+                    "color": "#303030"
+                },
+				{
+                    "name": "Black",
+                    "slug": "black",
+                    "color": "#000000"
+                }
+            ]
         },
         "custom": {},
         "layout": {
             "contentSize": "800px",
-            "wideSize": "1000px"
+            "wideSize": "1200px"
         },
         "spacing": {
-            "customMargin": false,
-            "customPadding": false,
+            "customMargin": true,
+            "customPadding": true,
             "units": [ "px", "em", "rem", "vh", "vw" ]
         },
         "typography": {
             "customFontSize": true,
-            "customFontStyle": true,
-            "customFontWeight": true,
-            "customLineHeight": false,
-            "customTextDecorations": true,
-            "customTextTransforms": true,
+            "customLineHeight": true,
             "dropCap": true,
-            "fontFamilies": [],
             "fontSizes": []
         },
-        "blocks": {
-            "core/paragraph": {
-                "border": {},
-                "color": {},
-                "custom": {},
-                "layout": {},
-                "spacing": {},
-                "typography": {}
-            },
-            "core/heading": {},
-            "etc": {}
-        }
+        "blocks": {}
     }
 }
