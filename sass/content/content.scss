@@ -11,46 +11,8 @@
 }
 
 /* Entry Header */
-.entry-header {
-	position: relative;
-	margin-top: 0;
-	margin-bottom: 1rem;
-	padding-bottom: 1rem;
-
-	&::before {
-		display: inline-block;
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 4rem;
-		height: 4px;
-		content: "";
-		@include background(--title-border-color);
-	}
-}
-
-.entry-title {
-	margin: 0;
-	padding: 0;
-	@include color(--title-color);
-	-ms-word-wrap: break-word;
-	word-wrap: break-word;
-	@include font-size(28);
-	@include font-family(--title-font);
-	@include font-weight(--title-font-weight);
-	@include text-transform(--title-text-transform);
-	@include line-height(--title-line-height);
-}
-
-.entry-title a:link,
-.entry-title a:visited {
-	@include color(--title-color);
-	text-decoration: none;
-}
-
-.entry-title a:hover,
-.entry-title a:active {
-	@include color(--title-hover-color);
+.entry-header .wp-block-columns {
+	margin-bottom: 0;
 }
 
 /* Entry Content */
