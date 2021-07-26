@@ -7,21 +7,21 @@
 }
 
 @media only screen and (min-width: 960px) {
-	.site-content > .alignwide {
+	.site-content .alignwide {
 		margin-left: -60px;
 		margin-right: -60px;
 	}
 }
 
 @media only screen and (min-width: 1120px) {
-	.site-content > .alignwide {
+	.site-content .alignwide {
 		margin-left: -120px;
 		margin-right: -120px;
 	}
 }
 
 @media only screen and (min-width: 1280px) {
-	.site-content > .alignwide {
+	.site-content .alignwide {
 		margin-left: -200px;
 		margin-right: -200px;
 	}

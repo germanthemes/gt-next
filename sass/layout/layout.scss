@@ -7,16 +7,16 @@
 }
 
 /* Alignments */
-.site-content > .alignwide {
+.site-content .alignwide {
 	max-width: $wideBlockWidth;
 }
 
-.site-content > .alignfull {
+.site-content .alignfull {
 	max-width: 100vw;
 }
 
-.site-content > .alignwide,
-.site-content > .alignfull {
+.site-content .alignwide,
+.site-content .alignfull {
 	margin-left: calc(-100vw / 2 + 100% / 2 + 8px);
 	margin-right: calc(-100vw / 2 + 100% / 2 + 8px);
 

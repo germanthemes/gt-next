@@ -765,34 +765,34 @@ textarea {
 }
 
 /* Alignments */
-.site-content > .alignwide {
+.site-content .alignwide {
 	max-width: 1200px;
 }
 
-.site-content > .alignfull {
+.site-content .alignfull {
 	max-width: 100vw;
 }
 
-.site-content > .alignwide,
-.site-content > .alignfull {
+.site-content .alignwide,
+.site-content .alignfull {
 	margin-left: calc(-100vw / 2 + 100% / 2 + 8px);
 	margin-right: calc(-100vw / 2 + 100% / 2 + 8px);
 }
 
-.site-content > .alignwide > [class*="__inner-container"] > *,
-.site-content > .alignfull > [class*="__inner-container"] > * {
+.site-content .alignwide > [class*="__inner-container"] > *,
+.site-content .alignfull > [class*="__inner-container"] > * {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 800px;
 }
 
-.site-content > .alignwide > [class*="__inner-container"] > *.alignwide,
-.site-content > .alignfull > [class*="__inner-container"] > *.alignwide {
+.site-content .alignwide > [class*="__inner-container"] > *.alignwide,
+.site-content .alignfull > [class*="__inner-container"] > *.alignwide {
 	max-width: 1200px;
 }
 
-.site-content > .alignwide > [class*="__inner-container"] > *.alignfull,
-.site-content > .alignfull > [class*="__inner-container"] > *.alignfull {
+.site-content .alignwide > [class*="__inner-container"] > *.alignfull,
+.site-content .alignfull > [class*="__inner-container"] > *.alignfull {
 	max-width: 100%;
 }
 
@@ -2404,21 +2404,21 @@ h1.is-style-gt-heading {
 ## - Media Queries for Layout
 --------------------------------------------------------------*/
 @media only screen and (min-width: 960px) {
-	.site-content > .alignwide {
+	.site-content .alignwide {
 		margin-left: -60px;
 		margin-right: -60px;
 	}
 }
 
 @media only screen and (min-width: 1120px) {
-	.site-content > .alignwide {
+	.site-content .alignwide {
 		margin-left: -120px;
 		margin-right: -120px;
 	}
 }
 
 @media only screen and (min-width: 1280px) {
-	.site-content > .alignwide {
+	.site-content .alignwide {
 		margin-left: -200px;
 		margin-right: -200px;
 	}
