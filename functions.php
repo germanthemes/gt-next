@@ -107,35 +107,6 @@ function gt_next_scripts() {
 	// Register and Enqueue Stylesheet.
 	wp_enqueue_style( 'gt-next-stylesheet', get_stylesheet_uri(), array(), $theme_version );
 
-	// Register and enqueue navigation.js.
-	if ( has_nav_menu( 'primary' ) or has_nav_menu( 'social-header' ) ) {
-		wp_enqueue_script( 'gt-next-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array( 'jquery' ), '20200327', true );
-		$gt_next_l10n = array(
-			'expand'   => esc_html__( 'Expand child menu', 'gt-next' ),
-			'collapse' => esc_html__( 'Collapse child menu', 'gt-next' ),
-			'icon'     => gt_next_get_svg( 'expand' ),
-		);
-		wp_localize_script( 'gt-next-navigation', 'gtDriveScreenReaderText', $gt_next_l10n );
-	}
-
-	// Register and enqueue header-search.js if enabled
-	if ( true === gt_next_get_option( 'header_search' ) || is_customize_preview() ) :
-
-		wp_enqueue_script( 'gt-next-header-search', get_theme_file_uri( '/assets/js/header-search.min.js' ), array( 'jquery' ), '20200327', true );
-
-	endif;
-
-	// Register and enqueue scroll-to-top.js if enabled
-	if ( true === gt_next_get_option( 'scroll_to_top' ) || is_customize_preview() ) :
-
-		wp_enqueue_script( 'gt-next-scroll-to-top', get_theme_file_uri( '/assets/js/scroll-to-top.min.js' ), array( 'jquery' ), '20210408', true );
-		wp_localize_script( 'gt-next-scroll-to-top', 'gtDriveScrollButton', array( 'icon' => gt_next_get_svg( 'collapse' ) ) );
-
-	endif;
-
-	// Enqueue svgxuse to support external SVG Sprites in Internet Explorer.
-	wp_enqueue_script( 'svgxuse', get_theme_file_uri( '/assets/js/svgxuse.min.js' ), array(), '1.2.4' );
-
 	// Register Comment Reply Script for Threaded Comments.
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
