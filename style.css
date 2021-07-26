@@ -764,30 +764,6 @@ textarea {
 	overflow: hidden;
 }
 
-.site-content,
-.site-footer {
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
-}
-
-.site-main,
-.footer-main {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.footer-main {
-	max-width: 1200px;
-}
-
-.site-main {
-	max-width: 800px;
-}
-
-.site-content {
-	padding-top: 1.25rem;
-}
-
 /* Alignments */
 .entry-content > .alignwide {
 	max-width: 1200px;
@@ -823,11 +799,13 @@ textarea {
 /*--------------------------------------------------------------
 # - Header
 --------------------------------------------------------------*/
-.site-header {
+.header-main {
 	display: flex;
+	margin: 0 auto !important;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	max-width: 1200px;
 }
 
 /* Site Title */
@@ -2963,58 +2941,3 @@ h1.is-style-gt-heading {
 /*--------------------------------------------------------------
 # - Page Templates
 --------------------------------------------------------------*/
-
-/* Fullwidth Page Template */
-body.page-template-template-fullwidth .site-content .site-main,
-body.page-template-template-fullwidth-no-title .site-content .site-main {
-	max-width: 1200px;
-}
-
-body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignwide,
-body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignwide {
-	max-width: 1440px;
-}
-
-body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > *,
-body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > *,
-body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > *,
-body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > * {
-	max-width: 1200px;
-}
-
-body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > *.alignwide,
-body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > *.alignwide,
-body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > *.alignwide,
-body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > *.alignwide {
-	max-width: 1440px;
-}
-
-body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > *.alignfull,
-body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > *.alignfull,
-body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > *.alignfull,
-body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > *.alignfull {
-	max-width: 100%;
-}
-
-/* Adjust Wide Blocks */
-@media only screen and (min-width: 960px) {
-	body.page-template-template-fullwidth .entry-content > .alignwide,
-	body.page-template-template-fullwidth-no-title .entry-content > .alignwide {
-		margin-left: calc(-100vw / 2 + 100% / 2 + 8px);
-		margin-right: calc(-100vw / 2 + 100% / 2 + 8px);
-	}
-}
-
-@media only screen and (min-width: 1440px) {
-	body.page-template-template-fullwidth .entry-content > .alignwide,
-	body.page-template-template-fullwidth-no-title .entry-content > .alignwide {
-		margin-left: -120px;
-		margin-right: -120px;
-	}
-}
-
-/* No Title Page Template */
-body.page-template-template-no-title .site-content,
-body.page-template-template-fullwidth-no-title .site-content {
-	padding-top: 0;
-}

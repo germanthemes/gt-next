@@ -1,8 +1,10 @@
-.site-header {
+.header-main {
 	display: flex;
+	margin: 0 auto !important;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	max-width: $contentFullwidth;
 }
 
 /* Site Title */

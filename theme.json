@@ -6,7 +6,18 @@
             "customDuotone": true,
             "customGradient": true,
             "duotone": [],
-            "gradients": [],
+            "gradients": [
+                {
+                    "slug": "primary-blue-green",
+                    "gradient": "linear-gradient(90deg, rgba(49,85,142,1) 0%, rgba(0,124,73,1) 100%)",
+                    "name": "Primary Blue Green"
+                },
+                {
+                    "slug": "blush-light-purple",
+                    "gradient": "linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%)",
+                    "name": "Blush light purple"
+                }
+            ],
             "link": true,
 			"palette": [
                 {
