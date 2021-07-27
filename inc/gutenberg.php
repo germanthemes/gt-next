@@ -25,7 +25,7 @@ function gt_next_block_editor_assets() {
 		wp_enqueue_script( 'gt-next-editor-theme-settings', get_theme_file_uri( '/assets/js/editor-theme-settings.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), $theme_version );
 	}
 }
-add_action( 'enqueue_block_editor_assets', 'gt_next_block_editor_assets' );
+#add_action( 'enqueue_block_editor_assets', 'gt_next_block_editor_assets' );
 
 
 /**

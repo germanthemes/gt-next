@@ -36,19 +36,6 @@ function gt_next_setup() {
 		'social-header' => esc_html__( 'Social Icons (Header)', 'gt-next' ),
 		'social-footer' => esc_html__( 'Social Icons (Footer)', 'gt-next' ),
 	) );
-
-	// Set up the WordPress core custom logo feature.
-	add_theme_support( 'custom-logo', apply_filters( 'gt_next_custom_logo_args', array(
-		'height'      => 60,
-		'width'       => 300,
-		'flex-height' => true,
-		'flex-width'  => true,
-	) ) );
-
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'gt_next_custom_background_args', array(
-		'default-color' => 'ffffff',
-	) ) );
 }
 add_action( 'after_setup_theme', 'gt_next_setup' );
 
@@ -76,11 +63,6 @@ function gt_next_scripts() {
 
 	// Register and Enqueue Stylesheet.
 	wp_enqueue_style( 'gt-next-stylesheet', get_stylesheet_uri(), array(), $theme_version );
-
-	// Register Comment Reply Script for Threaded Comments.
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
 }
 add_action( 'wp_enqueue_scripts', 'gt_next_scripts' );
 

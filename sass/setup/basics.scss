@@ -1,0 +1,18 @@
+html {
+	box-sizing: border-box;
+}
+
+/* Inherit box-sizing to make it easier to change the property
+for components that leverage other behavior;
+see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%; /* Adhere to container width. */
+	height: auto; /* Make sure images are scaled correctly. */
+	vertical-align: top;
+}
