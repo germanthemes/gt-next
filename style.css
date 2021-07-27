@@ -2015,27 +2015,6 @@ h1.is-style-gt-heading {
 	padding: calc(0.9375rem - 2px) calc(1.5625rem - 2px);
 }
 
-/* Block Font Sizes */
-.has-small-font-size {
-	font-size: 16px;
-}
-
-.has-medium-font-size {
-	font-size: 24px;
-}
-
-.has-large-font-size {
-	font-size: 36px;
-}
-
-.has-extra-large-font-size {
-	font-size: 48px;
-}
-
-.has-huge-font-size {
-	font-size: 64px;
-}
-
 /*--------------------------------------------------------------
 # - Footer
 --------------------------------------------------------------*/

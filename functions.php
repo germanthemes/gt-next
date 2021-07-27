@@ -107,6 +107,7 @@ add_action( 'enqueue_block_editor_assets', 'gt_next_theme_fonts', 1 );
 function gt_next_get_fonts_url() {
 	$font_families = array(
 		'Roboto:400,400italic,700,700italic',
+		'Inter:400,400italic,700,700italic',
 	);
 
 	$query_args = array(

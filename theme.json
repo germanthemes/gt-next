@@ -1,6 +1,12 @@
 {
     "version": 1,
     "settings": {
+		"border": {
+            "customColor": true,
+            "customRadius": true,
+            "customStyle": true,
+            "customWidth": true
+        },
         "color": {
             "custom": true,
             "customDuotone": true,
@@ -16,6 +22,16 @@
                     "slug": "blush-light-purple",
                     "gradient": "linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%)",
                     "name": "Blush light purple"
+                },
+				{
+                    "slug": "primary-highlight",
+                    "gradient": "linear-gradient(90deg, #e34333 0%, #7aca56 100%)",
+                    "name": "Primary Highlight"
+                },
+				{
+                    "slug": "primary-accent",
+                    "gradient": "linear-gradient(90deg, #e34333 0%, #33a2e3 100%)",
+                    "name": "Primary Accent"
                 }
             ],
             "link": true,
@@ -82,11 +98,58 @@
             "customPadding": true,
             "units": [ "px", "em", "rem", "vh", "vw" ]
         },
-        "typography": {
+		"typography": {
             "customFontSize": true,
+            "customFontStyle": true,
+            "customFontWeight": true,
             "customLineHeight": true,
+            "customTextDecorations": true,
+            "customTextTransforms": true,
             "dropCap": true,
-            "fontSizes": []
+			"fontFamilies": [
+                {
+                    "fontFamily": "Roboto, arial, helvetica, sans-serif",
+                    "slug": "roboto",
+                    "name": "Roboto"
+                },
+                {
+                    "fontFamily": "Inter, arial, helvetica, sans-serif",
+                    "slug": "inter",
+                    "name": "Inter"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "slug": "small",
+                    "size": "15px",
+                    "name": "Small"
+                },
+				{
+                    "slug": "normal",
+                    "size": "17px",
+                    "name": "Normal"
+                },
+                {
+                    "slug": "medium",
+                    "size": "20px",
+                    "name": "Medium"
+                },
+				{
+                    "slug": "large",
+                    "size": "24px",
+                    "name": "Large"
+                },
+                {
+                    "slug": "Extra Large",
+                    "size": "36px",
+                    "name": "Extra Large"
+                },
+                {
+                    "slug": "Huge",
+                    "size": "64px",
+                    "name": "Huge"
+                }
+            ]
         },
         "blocks": {}
     }
