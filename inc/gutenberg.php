@@ -42,7 +42,7 @@ function gt_next_gutenberg_support() {
 		),
 	) ) );
 }
-add_action( 'after_setup_theme', 'gt_next_gutenberg_support' );
+#add_action( 'after_setup_theme', 'gt_next_gutenberg_support' );
 
 
 /**

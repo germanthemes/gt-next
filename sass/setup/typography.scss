@@ -6,7 +6,7 @@ textarea {
 	@include color(--text-color);
 	@include font-size(16);
 	@include font-family(--text-font);
-	@include line-height(--text-line-height);
+	line-height: var(--wp--custom--line-height--body);
 }
 
 h1,
@@ -21,7 +21,7 @@ h6 {
 	@include font-family(--title-font);
 	@include font-weight(--title-font-weight);
 	@include text-transform(--title-text-transform);
-	@include line-height(--title-line-height);
+	line-height: var(--wp--custom--line-height--heading);
 }
 
 h1 {
@@ -73,7 +73,7 @@ pre {
 	@include background(--light-background-color);
 	@include font-size(15);
 	font-family: "Courier 10 Pitch", Courier, monospace;
-	@include line-height(--text-line-height);
+	line-height: var(--wp--custom--line-height--body);
 }
 
 code,

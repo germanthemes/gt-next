@@ -334,8 +334,7 @@ textarea {
 	font-size: 1rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
 	font-family: var(--gt-next--text-font);
-	line-height: 1.75;
-	line-height: var(--gt-next--text-line-height);
+	line-height: var(--wp--custom--line-height--body);
 }
 
 h1,
@@ -353,8 +352,7 @@ h6 {
 	font-weight: var(--gt-next--title-font-weight);
 	text-transform: none;
 	text-transform: var(--gt-next--title-text-transform);
-	line-height: 1.25;
-	line-height: var(--gt-next--title-line-height);
+	line-height: var(--wp--custom--line-height--heading);
 }
 
 h1 {
@@ -415,8 +413,7 @@ pre {
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Courier 10 Pitch", Courier, monospace;
-	line-height: 1.75;
-	line-height: var(--gt-next--text-line-height);
+	line-height: var(--wp--custom--line-height--body);
 }
 
 code,
